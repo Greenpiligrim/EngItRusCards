@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
-		EAEE93EE28CBDF4C005CD230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93ED28CBDF4C005CD230 /* ContentView.swift */; };
 		EAEE93F028CBDF4D005CD230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93EF28CBDF4D005CD230 /* Assets.xcassets */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
+		EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */; };
+		EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FC28CBE194005CD230 /* EnglishFrasesDataServise.swift */; };
+		EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FD28CBE194005CD230 /* FrasesModel.swift */; };
+		EAEE940828CBE194005CD230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93FE28CBE194005CD230 /* Assets.xcassets */; };
+		EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940128CBE194005CD230 /* CardFrases.swift */; };
+		EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940228CBE194005CD230 /* FrasesHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
-		EAEE93ED28CBDF4C005CD230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAEE93EF28CBDF4D005CD230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesViewModel.swift; sourceTree = "<group>"; };
+		EAEE93FC28CBE194005CD230 /* EnglishFrasesDataServise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnglishFrasesDataServise.swift; sourceTree = "<group>"; };
+		EAEE93FD28CBE194005CD230 /* FrasesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesModel.swift; sourceTree = "<group>"; };
+		EAEE93FE28CBE194005CD230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAEE940128CBE194005CD230 /* CardFrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFrases.swift; sourceTree = "<group>"; };
+		EAEE940228CBE194005CD230 /* FrasesHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */,
-				EAEE93ED28CBDF4C005CD230 /* ContentView.swift */,
+				EAEE93FB28CBE194005CD230 /* Model */,
+				EAEE93F928CBE194005CD230 /* ViewModel */,
+				EAEE940028CBE194005CD230 /* Views */,
 				EAEE93EF28CBDF4D005CD230 /* Assets.xcassets */,
 				EAEE93F128CBDF4D005CD230 /* Preview Content */,
 			);
@@ -62,9 +74,36 @@
 		EAEE93F128CBDF4D005CD230 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				EAEE93FE28CBE194005CD230 /* Assets.xcassets */,
 				EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAEE93F928CBE194005CD230 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAEE93FB28CBE194005CD230 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE93FC28CBE194005CD230 /* EnglishFrasesDataServise.swift */,
+				EAEE93FD28CBE194005CD230 /* FrasesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAEE940028CBE194005CD230 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE940128CBE194005CD230 /* CardFrases.swift */,
+				EAEE940228CBE194005CD230 /* FrasesHome.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */,
+				EAEE940828CBE194005CD230 /* Assets.xcassets in Resources */,
 				EAEE93F028CBDF4D005CD230 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEE93EE28CBDF4C005CD230 /* ContentView.swift in Sources */,
+				EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */,
+				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
+				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
+				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
+				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
 				EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
