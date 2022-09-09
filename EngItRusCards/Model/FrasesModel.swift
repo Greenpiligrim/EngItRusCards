@@ -21,7 +21,7 @@ struct Frases: Identifiable, Equatable {
     let it: String
     let rusIt: String
     
-    
+    //i'm not sure about this func mabe will be need
     static func == (lhs: Frases, rhs: Frases) -> Bool {
         lhs.id == rhs.id
     }
