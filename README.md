@@ -6,4 +6,5 @@ EnglishFrasesDataServise.swift
 
 
 
-For iOS 15+
+Only for iOS 15
+Because app for iOS 16 has some bugs, are need to fix. For example speech module doesn't work 
