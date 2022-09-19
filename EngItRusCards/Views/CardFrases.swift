@@ -104,8 +104,8 @@ extension CardFrases {
         }
         .buttonStyle(.borderedProminent)
         .tint(.orange)
-        .shadow(radius: 20)
-        .padding(30)
+        .shadow(radius: 10)
+       
     }
 
     private var emptyCard: some View {
