@@ -32,7 +32,7 @@ struct CardFrases: View {
                         bigText
                         Spacer()
                         
-                        buttonSpeek
+                       // buttonSpeek
                             
                       
                         littleText
@@ -105,6 +105,7 @@ extension CardFrases {
         .buttonStyle(.borderedProminent)
         .tint(.orange)
         .shadow(radius: 20)
+        .padding(30)
     }
 
     private var emptyCard: some View {
@@ -138,6 +139,8 @@ struct ArrowFlag: View {
                             italian.toggle()
                         }
                     }
+                    .shadow(radius: italian ? 7.0 : 1.0)
+
 
                 Text("🇮🇹")
                     .scaleEffect(italian ? 0.8 : 1.6)
@@ -146,6 +149,7 @@ struct ArrowFlag: View {
                             italian.toggle()
                         }
                     }
+                    .shadow(radius: italian ? 1.0 : 7.0)
             }.padding()
 
             Button(action: {
@@ -153,8 +157,9 @@ struct ArrowFlag: View {
                     wiseWersa.toggle()
                 }
             }, label: {
-                Image(systemName: "arrow.counterclockwise")
-                    .tint(.white)
+                Image(systemName: "arrow.2.circlepath")
+                    .font(.title3)
+                    .tint(.black)
                     .rotationEffect(Angle(degrees: wiseWersa ? 180 : 0))
             })
 
