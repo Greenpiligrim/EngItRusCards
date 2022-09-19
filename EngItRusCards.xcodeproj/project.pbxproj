@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A9BE628D8C2F100A15B8E /* TestView.swift */; };
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
 		EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA8A9BE628D8C2F100A15B8E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
 		EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				EAEE940128CBE194005CD230 /* CardFrases.swift */,
 				EAEE940228CBE194005CD230 /* FrasesHome.swift */,
+				EA8A9BE628D8C2F100A15B8E /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */,
 				EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
