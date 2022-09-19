@@ -9,16 +9,12 @@ import SwiftUI
 import Foundation
 
 struct TestView: View {
-    private var people: [String] = [
-    "Bill",
-    "George",
-    "Donald"
-    ]
-    
+    let people = EnglishFrasesDataServise.FrasesCard
+
     var body: some View {
         ZStack {
-            ForEach(people, id: \.self) { person in
-                CardView(person: person)
+            ForEach(people) { p in
+                CardView(cardData: p)
             }
         }
     }
@@ -32,26 +28,26 @@ struct TestView_Previews: PreviewProvider {
 
 
 struct CardView: View {
-    var person: String
+    var cardData: Frases
     @State private var offset = CGSize.zero
     @State private var color: Color = .black
+    
+    
+    
+    
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: 320, height: 420)
-                .border(.white, width: 6.0)
-                .cornerRadius(4)
-                .foregroundColor(color.opacity(0.9))
-                .shadow(radius: 4)
+                .frame(width: 300, height: 400)
+                .cornerRadius(30)
+                .shadow(radius: 5)
             
             
             HStack {
-                Text(person)
+                Text(cardData.it)
                     .font(.largeTitle)
                     .foregroundColor(.white)
-                    .bold()
-                Image(systemName: "heart.fill")
-                    .foregroundColor(.red)
+           
             }
         }
         .offset(x: offset.width, y: offset.height * 0.4)
@@ -76,10 +72,10 @@ struct CardView: View {
     func swipeCard(width: CGFloat) {
         switch width {
         case -500...(-150):
-            print("\(person) removed")
+            print("\(cardData) removed")
             offset = CGSize(width: -500, height: 0)
         case 150...500:
-            print("\(person) added")
+            print("\(cardData) added")
             offset = CGSize(width: 500, height: 0)
         default:
             offset = .zero

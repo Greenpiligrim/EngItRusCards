@@ -7,7 +7,7 @@
 import Foundation
 
 class EnglishFrasesDataServise {
-    
+   
     static let FrasesCard: [Frases] = [
     Frases(eng: "Let's go!", rus: "Нажми кнопку 👇🏻", it: "Salve.", rusIt: "Привет."),
     Frases(eng: "It's a no-brainer.", rus: "Это очевидно.", it: "Grazie.", rusIt: "Спасибо."),
@@ -62,11 +62,7 @@ class EnglishFrasesDataServise {
     Frases(eng: "I hope for the best.", rus: "Я надеюсь на лучшее.", it: "Minuto.", rusIt: "Минута."),
     Frases(eng: "The choice is yours.", rus: "Тебе выбирать.", it: "Secondo.", rusIt: "Секунда."),
     Frases(eng: "Come on, let's grab a bite.", rus: "Ладно, давай перекусим.", it: "Numero.", rusIt: "Номер."),
-    Frases(eng: "You must be very upset about it. 68", rus: "Вы должно быть очень расстроились из-за этого.", it: "Ieri.", rusIt: "Вчера.7"),
-    Frases(eng: "", rus: "", it: "", rusIt: ""),
-    Frases(eng: "", rus: "", it: "", rusIt: ""),
-    Frases(eng: "", rus: "", it: "", rusIt: ""),
-    Frases(eng: "", rus: "", it: "", rusIt: "")
+    Frases(eng: "You must be very upset about it. 68", rus: "Вы должно быть очень расстроились из-за этого.", it: "Ieri.", rusIt: "Вчера.7")
 
     ]
 }

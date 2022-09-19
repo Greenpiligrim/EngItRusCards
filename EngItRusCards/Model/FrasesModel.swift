@@ -10,9 +10,7 @@ import Foundation
 
 struct Frases: Identifiable, Equatable {
     
-    var id: String {
-        eng
-    }
+    var id = UUID().uuidString
     let eng: String
     let rus: String
     
