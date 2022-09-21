@@ -12,8 +12,8 @@ struct EngItRusCardsApp: App {
     @StateObject private var vm = FrasesViewModel()
     var body: some Scene {
         WindowGroup {
-            TestView()
-//            FrasesView()
+//            TestView()
+            FrasesView()
                 .environmentObject(vm)
         }
     }

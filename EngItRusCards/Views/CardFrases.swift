@@ -11,7 +11,8 @@ import AVFoundation
 struct CardFrases: View {
     @EnvironmentObject private var vm: FrasesViewModel
     let frasses: Frases
-    
+    @State var offset: CGSize = .zero
+
     @State var wiseWersa: Bool = false
     @State var existCard: Bool = true
     @State var showTranslate: Bool = false
@@ -23,6 +24,7 @@ struct CardFrases: View {
     var body: some View {
         
         VStack {
+            Text("\(offset.width)")
 
             if existCard {
                 
@@ -54,6 +56,20 @@ struct CardFrases: View {
                         }
                     }
                     .transition(.slide)
+                    .offset(offset)
+                    .gesture(
+                    DragGesture()
+                        .onChanged { gesture in
+                            withAnimation {
+                                offset = gesture.translation
+                            }
+                        }
+                        .onEnded { _ in
+                            withAnimation {
+                                vm.nextButtonPressed()
+                            }
+                        }
+                    )
             } else {emptyCard}
 
             buttOn
