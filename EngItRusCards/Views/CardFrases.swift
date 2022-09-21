@@ -18,6 +18,8 @@ struct CardFrases: View {
     @State var showTranslate: Bool = false
     @State var italian: Bool = false
     
+    @State var transition: AnyTransition = .slide
+    
     @State var boolFunc: Bool = false
     
     
@@ -44,18 +46,12 @@ struct CardFrases: View {
                     .cornerRadius(30)
                     .shadow(color: .red, radius: 30, x: 5)
                     .padding(50)
-//                    .onTapGesture {
-//                        withAnimation(.easeOut) {
-//                            showTranslate.toggle()
-//                        }
-//                    }
-                    .transition(.slide)
                     .onDisappear{
                         withAnimation {
                             existCard.toggle()
                         }
                     }
-                    .transition(.slide)
+                    .transition(transition)
                     .offset(x: offset.width)
                     .gesture(
                     DragGesture()
@@ -66,26 +62,36 @@ struct CardFrases: View {
                         }
                     
                         .onEnded { _ in
-                            if offset.width > 150 {
-                                withAnimation {
+                            if offset.width > 30 {
+                                transition = .slide
+                                withAnimation(.easeOut(duration: 0.1)) {
                                     vm.nextButtonPressed()
                                     showTranslate = false
                                     existCard.toggle()
                                     offset = .zero
                                 }
                             } else {
-                                withAnimation(.spring()) {
-                                    offset = .zero
+                                if offset.width < 0 {
+                                    transition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+                                    withAnimation(.easeIn(duration: 0.1)) {
+                                        vm.backButtonPressed()
+                                        showTranslate = false
+                                        existCard.toggle()
+                                        offset = .zero
+                                    }
+                                    
+                                } else {
+                                    withAnimation(.spring()) {
+                                        offset = .zero
+                                    }
                                 }
                             }
                         }
                     )
             } else {emptyCard}
-
-            buttOn
+            //buttOn
         }
     }
-   
 }
 
 extension CardFrases {

@@ -101,5 +101,33 @@ class FrasesViewModel: ObservableObject {
       
     }
     
+    func backButtonPressed() {
+        
+        //get the currentindex
+        guard
+            let currentIndex = frasesArrayPublisher.firstIndex(where: {$0 == frasesArray}) else {
+            print("could not find correct index")
+            return
+        }
+        
+        //check if the current index is valid
+        let beforeIndex = currentIndex - 1
+        guard frasesArrayPublisher.indices.contains(beforeIndex) else {
+            
+            //Next index is not valid
+            //Restart from 0
+            guard let firstFrass = frasesArrayPublisher.first else {
+                return
+            }
+            showNextFrases(frasses: firstFrass)
+            return
+        }
+        
+        //Next index is Valid
+        let nextFrasses = frasesArrayPublisher[beforeIndex]
+        showNextFrases(frasses: nextFrasses)
+        
+    }
+    
 }
 
