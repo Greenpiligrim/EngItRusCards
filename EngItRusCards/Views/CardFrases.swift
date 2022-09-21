@@ -202,7 +202,6 @@ struct ArrowFlag: View {
             }, label: {
                 Image(systemName: "arrow.2.circlepath")
                     .font(.title3)
-                    .tint(.black)
                     .rotationEffect(Angle(degrees: wiseWersa ? 180 : 0))
             })
 
