@@ -24,7 +24,7 @@ struct CardFrases: View {
     var body: some View {
         
         VStack {
-            Text("\(offset.width)")
+//            Text("\(offset.width)")
 
             if existCard {
                 
@@ -44,11 +44,11 @@ struct CardFrases: View {
                     .cornerRadius(30)
                     .shadow(color: .red, radius: 30, x: 5)
                     .padding(50)
-                    .onTapGesture {
-                        withAnimation(.easeOut) {
-                            showTranslate.toggle()
-                        }
-                    }
+//                    .onTapGesture {
+//                        withAnimation(.easeOut) {
+//                            showTranslate.toggle()
+//                        }
+//                    }
                     .transition(.slide)
                     .onDisappear{
                         withAnimation {
@@ -56,7 +56,7 @@ struct CardFrases: View {
                         }
                     }
                     .transition(.slide)
-                    .offset(offset)
+                    .offset(x: offset.width)
                     .gesture(
                     DragGesture()
                         .onChanged { gesture in
@@ -64,9 +64,19 @@ struct CardFrases: View {
                                 offset = gesture.translation
                             }
                         }
+                    
                         .onEnded { _ in
-                            withAnimation {
-                                vm.nextButtonPressed()
+                            if offset.width > 150 {
+                                withAnimation {
+                                    vm.nextButtonPressed()
+                                    showTranslate = false
+                                    existCard.toggle()
+                                    offset = .zero
+                                }
+                            } else {
+                                withAnimation(.spring()) {
+                                    offset = .zero
+                                }
                             }
                         }
                     )
@@ -99,6 +109,9 @@ extension CardFrases {
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
             .transition(.slide)
+        }
+        .onTapGesture {
+            showTranslate.toggle()
         }
         .padding()
     }
