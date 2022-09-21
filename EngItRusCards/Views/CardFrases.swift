@@ -11,18 +11,16 @@ import AVFoundation
 struct CardFrases: View {
     @EnvironmentObject private var vm: FrasesViewModel
     let frasses: Frases
+    
     @State var offset: CGSize = .zero
-
+    @State var transition: AnyTransition = .slide
+    
     @State var wiseWersa: Bool = false
     @State var existCard: Bool = true
     @State var showTranslate: Bool = false
     @State var italian: Bool = false
     
-    @State var transition: AnyTransition = .slide
-    
-    @State var boolFunc: Bool = false
-    
-    
+  
     var body: some View {
         
         VStack {
@@ -63,23 +61,10 @@ struct CardFrases: View {
                     
                         .onEnded { _ in
                             if offset.width > 30 {
-                                transition = .slide
-                                withAnimation(.easeOut(duration: 0.1)) {
-                                    vm.nextButtonPressed()
-                                    showTranslate = false
-                                    existCard.toggle()
-                                    offset = .zero
-                                }
+                                ifMore()
                             } else {
                                 if offset.width < 0 {
-                                    transition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
-                                    withAnimation(.easeIn(duration: 0.1)) {
-                                        vm.backButtonPressed()
-                                        showTranslate = false
-                                        existCard.toggle()
-                                        offset = .zero
-                                    }
-                                    
+                                    ifLess()
                                 } else {
                                     withAnimation(.spring()) {
                                         offset = .zero
@@ -95,6 +80,26 @@ struct CardFrases: View {
 }
 
 extension CardFrases {
+    
+    func ifMore() {
+        transition = .slide
+        withAnimation(.easeOut(duration: 0.1)) {
+            vm.nextButtonPressed()
+            showTranslate = false
+            existCard.toggle()
+            offset = .zero
+        }
+    }
+    
+    func ifLess() {
+        transition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+        withAnimation(.easeIn(duration: 0.1)) {
+            vm.backButtonPressed()
+            showTranslate = false
+            existCard.toggle()
+            offset = .zero
+        }
+    }
 
 
     private var bigText: some View {
@@ -145,8 +150,11 @@ extension CardFrases {
 
     private var emptyCard: some View {
         Color.orange
-            .frame(width: 500, height: 400)
+            .frame(width: 300, height: 400)
+            .background()
+            .cornerRadius(30)
             .padding(50)
+            .transition(.slide)
     }
     private var buttonSpeek: some View {
         Button {
