@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FrasesView: View {
+struct HomeView: View {
     @EnvironmentObject var vm: FrasesViewModel
     @State var showSheet: Bool = false
     
@@ -25,7 +25,7 @@ struct FrasesView: View {
 
 
 
-extension FrasesView {
+extension HomeView {
     private var editButton: some View {
         
         Button {

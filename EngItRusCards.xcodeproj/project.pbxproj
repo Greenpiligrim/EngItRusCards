@@ -16,7 +16,7 @@
 		EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FD28CBE194005CD230 /* FrasesModel.swift */; };
 		EAEE940828CBE194005CD230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93FE28CBE194005CD230 /* Assets.xcassets */; };
 		EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940128CBE194005CD230 /* CardFrases.swift */; };
-		EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940228CBE194005CD230 /* FrasesHome.swift */; };
+		EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940228CBE194005CD230 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		EAEE93FD28CBE194005CD230 /* FrasesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesModel.swift; sourceTree = "<group>"; };
 		EAEE93FE28CBE194005CD230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEE940128CBE194005CD230 /* CardFrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFrases.swift; sourceTree = "<group>"; };
-		EAEE940228CBE194005CD230 /* FrasesHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesHome.swift; sourceTree = "<group>"; };
+		EAEE940228CBE194005CD230 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				EAEE940128CBE194005CD230 /* CardFrases.swift */,
-				EAEE940228CBE194005CD230 /* FrasesHome.swift */,
+				EAEE940228CBE194005CD230 /* HomeView.swift */,
 				EAE8CAB628E1937C003AFF6D /* AddView.swift */,
 				EA8A9BE628D8C2F100A15B8E /* TestView.swift */,
 			);
@@ -180,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */,
-				EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */,
+				EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
 				EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */,

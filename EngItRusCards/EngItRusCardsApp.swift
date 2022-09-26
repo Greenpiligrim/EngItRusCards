@@ -13,7 +13,7 @@ struct EngItRusCardsApp: App {
     var body: some Scene {
         WindowGroup {
 //            TestView()
-            FrasesView()
+            HomeView()
                 .environmentObject(vm)
         }
     }
