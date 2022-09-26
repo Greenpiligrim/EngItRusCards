@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A9BE628D8C2F100A15B8E /* TestView.swift */; };
+		EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8CAB628E1937C003AFF6D /* AddView.swift */; };
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
 		EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		EA8A9BE628D8C2F100A15B8E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		EAE8CAB628E1937C003AFF6D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
 		EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				EAEE940128CBE194005CD230 /* CardFrases.swift */,
 				EAEE940228CBE194005CD230 /* FrasesHome.swift */,
+				EAE8CAB628E1937C003AFF6D /* AddView.swift */,
 				EA8A9BE628D8C2F100A15B8E /* TestView.swift */,
 			);
 			path = Views;
@@ -180,6 +183,7 @@
 				EAEE940B28CBE194005CD230 /* FrasesHome.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
+				EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */,
 				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
 				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
 				EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */,

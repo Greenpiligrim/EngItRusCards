@@ -18,7 +18,7 @@ struct CardFrases: View {
     @State var wiseWersa: Bool = false
     @State var existCard: Bool = true
     @State var showTranslate: Bool = false
-    @State var italian: Bool = false
+    @State var italian: Bool = true
     
   
     var body: some View {

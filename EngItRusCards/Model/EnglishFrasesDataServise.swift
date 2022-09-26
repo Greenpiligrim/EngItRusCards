@@ -9,7 +9,7 @@ import Foundation
 class EnglishFrasesDataServise {
    
     static let FrasesCard: [Frases] = [
-    Frases(eng: "Let's go!", rus: "Нажми кнопку 👇🏻", it: "Salve.", rusIt: "Привет."),
+    Frases(eng: "Let's go!", rus: "Cвайп 👉🏽", it: "Salve.", rusIt: "Привет."),
     Frases(eng: "It's a no-brainer.", rus: "Это очевидно.", it: "Grazie.", rusIt: "Спасибо."),
     Frases(eng: "I feel woozy.", rus: "Что-то мне не хорошо.", it: "Per favore.", rusIt: "Пожалуйста."),
     Frases(eng: "Go ahead, I'm all ears.", rus: "Продолжай, я весь внимание.", it: "Scusa.", rusIt: "Простите."),
