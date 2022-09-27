@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A9BE628D8C2F100A15B8E /* TestView.swift */; };
+		EAAAAFF828E388CB005A9AAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAAAAFF628E388CB005A9AAC /* Model.xcdatamodeld */; };
 		EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8CAB628E1937C003AFF6D /* AddView.swift */; };
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		EA8A9BE628D8C2F100A15B8E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		EAAAAFF728E388CB005A9AAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		EAE8CAB628E1937C003AFF6D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				EAEE940228CBE194005CD230 /* HomeView.swift */,
 				EAE8CAB628E1937C003AFF6D /* AddView.swift */,
 				EA8A9BE628D8C2F100A15B8E /* TestView.swift */,
+				EAAAAFF628E388CB005A9AAC /* Model.xcdatamodeld */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
 				EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */,
+				EAAAAFF828E388CB005A9AAC /* Model.xcdatamodeld in Sources */,
 				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
 				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
 				EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */,
@@ -397,6 +401,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAAAAFF628E388CB005A9AAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAAAAFF728E388CB005A9AAC /* Model.xcdatamodel */,
+			);
+			currentVersion = EAAAAFF728E388CB005A9AAC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EAEE93E028CBDF4C005CD230 /* Project object */;
 }
