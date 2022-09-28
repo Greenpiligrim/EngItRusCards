@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA04A77728E4733C0035F923 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04A77628E4733C0035F923 /* DataController.swift */; };
 		EA8A9BE728D8C2F100A15B8E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A9BE628D8C2F100A15B8E /* TestView.swift */; };
 		EAAAAFF828E388CB005A9AAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAAAAFF628E388CB005A9AAC /* Model.xcdatamodeld */; };
 		EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8CAB628E1937C003AFF6D /* AddView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA04A77628E4733C0035F923 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		EA8A9BE628D8C2F100A15B8E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EAAAAFF728E388CB005A9AAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		EAE8CAB628E1937C003AFF6D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EAE8CAB628E1937C003AFF6D /* AddView.swift */,
 				EA8A9BE628D8C2F100A15B8E /* TestView.swift */,
 				EAAAAFF628E388CB005A9AAC /* Model.xcdatamodeld */,
+				EA04A77628E4733C0035F923 /* DataController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
 				EAE8CAB728E1937C003AFF6D /* AddView.swift in Sources */,
+				EA04A77728E4733C0035F923 /* DataController.swift in Sources */,
 				EAAAAFF828E388CB005A9AAC /* Model.xcdatamodeld in Sources */,
 				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
 				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
