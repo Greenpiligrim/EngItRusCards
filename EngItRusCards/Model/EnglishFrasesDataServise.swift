@@ -5,8 +5,11 @@
 //  Created by Vladimir Vasilenko on 09/09/22.
 //
 import Foundation
+import CoreData
 
 class EnglishFrasesDataServise {
+ 
+
    
     static let FrasesCard: [Frases] = [
     Frases(eng: "Let's go!", rus: "Cвайп 👉🏽", it: "Salve.", rusIt: "Привет."),
