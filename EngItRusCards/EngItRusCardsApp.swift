@@ -10,13 +10,10 @@ import SwiftUI
 @main
 struct EngItRusCardsApp: App {
     @StateObject private var vm = FrasesViewModel()
-    @StateObject private var dataController = DataController()
     var body: some Scene {
         WindowGroup {
-//            TestView()
             HomeView()
                 .environmentObject(vm)
-                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

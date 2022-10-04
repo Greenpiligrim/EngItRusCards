@@ -79,27 +79,7 @@ class FrasesViewModel: ObservableObject {
         
     }
     
-    
-    func speakIt() {
-        let utterance = AVSpeechUtterance(string: frasesPublisherStart.it)
-        
-        utterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
-        
-        let synyhesizer = AVSpeechSynthesizer()
-        synyhesizer.speak(utterance)
-        
-    }
-    
-    func speakEng() {
-        let utterance = AVSpeechUtterance(string: frasesPublisherStart.eng)
-        
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        
-        let synyhesizer = AVSpeechSynthesizer()
-        synyhesizer.speak(utterance)
-        
-      
-    }
+
     
     func backButtonPressed() {
         

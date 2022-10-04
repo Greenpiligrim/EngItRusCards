@@ -24,7 +24,6 @@ struct CardFrases: View {
     var body: some View {
         
         VStack {
-//            Text("\(offset.width)")
 
             if existCard {
                 
@@ -34,7 +33,6 @@ struct CardFrases: View {
                         bigText
                         Spacer()
                         
-                       // buttonSpeek
                             
                       
                         littleText
@@ -74,7 +72,6 @@ struct CardFrases: View {
                         }
                     )
             } else {emptyCard}
-            //buttOn
         }
     }
 }
@@ -156,17 +153,6 @@ extension CardFrases {
             .padding(50)
             .transition(.slide)
     }
-    private var buttonSpeek: some View {
-        Button {
-          
-            if italian {vm.speakEng()} else
-            {vm.speakIt()}
-                
-        } label: {
-            Image(systemName: "speaker.wave.3")
-        }.tint(.orange)
-    }
-
 
 struct ArrowFlag: View {
     @Binding var wiseWersa: Bool
