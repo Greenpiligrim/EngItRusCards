@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreData
+import SwiftUI
 
 
 struct Frases: Identifiable, Equatable {
@@ -24,4 +26,17 @@ struct Frases: Identifiable, Equatable {
     }
     
 
+}
+
+struct Frases2 {
+    let arrayData: FetchedResults<Item>
+    
+    
+
+    var id = UUID().uuidString
+    let eng: String
+    let rus: String
+    let it: String
+    let rusIt: String
+   
 }

@@ -1,18 +1,13 @@
 //
-//  CardFrases2.swift
+//  CardFrasess2.swift
 //  EngItRusCards
 //
 //  Created by Vladimir Vasilenko on 17/10/22.
 //
-
-import Foundation
 import SwiftUI
 
 struct CardFrases2: View {
-//    @EnvironmentObject private var vm: FrasesViewModel
-    let frasses: FetchedResults<Item>
-    @State var increment: Int = 0
-
+    let frasses: Frases2
     
     @State var offset: CGSize = .zero
     @State var transition: AnyTransition = .slide
@@ -83,7 +78,7 @@ extension CardFrases2 {
     func ifMore() {
         transition = .slide
         withAnimation(.easeOut(duration: 0.1)) {
-            //vm.nextButtonPressed()
+           // vm.nextButtonPressed()
             showTranslate = false
             existCard.toggle()
             offset = .zero
@@ -93,7 +88,7 @@ extension CardFrases2 {
     func ifLess() {
         transition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
         withAnimation(.easeIn(duration: 0.1)) {
-            //vm.backButtonPressed()
+           // vm.backButtonPressed()
             showTranslate = false
             existCard.toggle()
             offset = .zero
@@ -103,7 +98,7 @@ extension CardFrases2 {
 
     private var bigText: some View {
         VStack() {
-            Text(italian ? (wiseWersa ? (frasses[increment].rus ?? "no data") : (frasses[increment].eng ?? "no data")) : (wiseWersa ? (frasses[increment].rusIt ?? "no data") : (frasses[increment].it ?? "no data"))
+            Text(italian ? (wiseWersa ? frasses.rus : frasses.eng) : (wiseWersa ? frasses.rusIt : frasses.it))
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
@@ -114,7 +109,7 @@ extension CardFrases2 {
 
     private var littleText: some View {
         HStack {
-            Text(italian ? (showTranslate ? "*" + (wiseWersa ? frasses[increment].eng?.uppercased() ?? "n/d" : frasses[increment].rus?.uppercased() ?? "n/d") : (wiseWersa ? "* подсказка" : "* tap to show translate" )) : ((showTranslate ? "*" + (wiseWersa ? frasses[increment].it?.uppercased() ?? "n/d": frasses[increment].rusIt?.uppercased() ?? "n/d") : (wiseWersa ? "* подсказка" : "* toccare per visualizzare la traduzione" ))))
+            Text(italian ? (showTranslate ? "*" + (wiseWersa ? frasses.eng.uppercased() : frasses.rus.uppercased()) : (wiseWersa ? "* подсказка" : "* tap to show translate" )) : ((showTranslate ? "*" + (wiseWersa ? frasses.it.uppercased() : frasses.rusIt.uppercased()) : (wiseWersa ? "* подсказка" : "* toccare per visualizzare la traduzione" ))))
                 .font(.subheadline)
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
