@@ -11,6 +11,7 @@
 		EA16CFE028FD790100DA3FE5 /* EmptyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */; };
 		EA16CFE228FD82F800DA3FE5 /* CreatingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */; };
 		EA5E452F28FD627800AAE37E /* CardFrases2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E452E28FD627800AAE37E /* CardFrases2.swift */; };
+		EAAAFC4628FD882A00B6A116 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAFC4528FD882A00B6A116 /* TextFieldView.swift */; };
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
 		EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93FA28CBE194005CD230 /* FrasesViewModel.swift */; };
@@ -28,6 +29,7 @@
 		EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHomeView.swift; sourceTree = "<group>"; };
 		EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCardView.swift; sourceTree = "<group>"; };
 		EA5E452E28FD627800AAE37E /* CardFrases2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrases2.swift; sourceTree = "<group>"; };
+		EAAAFC4528FD882A00B6A116 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
 		EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				EAEE940228CBE194005CD230 /* HomeView.swift */,
 				EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */,
 				EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */,
+				EAAAFC4528FD882A00B6A116 /* TextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				EAFB74E628FD536100870F3C /* PersistController.swift in Sources */,
 				EA16CFE028FD790100DA3FE5 /* EmptyHomeView.swift in Sources */,
 				EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */,
+				EAAAFC4628FD882A00B6A116 /* TextFieldView.swift in Sources */,
 				EA16CFE228FD82F800DA3FE5 /* CreatingCardView.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,

@@ -10,18 +10,20 @@ import SwiftUI
 struct CreatingCardView: View {
     @Environment (\.presentationMode) var presentation
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            Color.orange.opacity(0.2).ignoresSafeArea()
-            Button {
-                presentation.wrappedValue.dismiss()
-            } label: {
-                Image(systemName: "xmark")
-                    .foregroundColor(.orange)
-                    .font(.largeTitle)
-                    .padding(20)
-                    
+        ZStack {
+            ZStack(alignment: .topLeading) {
+                Color.orange.opacity(0.2).ignoresSafeArea()
+                Button {
+                    presentation.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(.orange)
+                        .font(.largeTitle)
+                        .padding(20)
+                }
             }
-
+            TextFieldView()
+                .padding(20)
         }
     }
 }

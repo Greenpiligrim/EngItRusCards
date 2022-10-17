@@ -13,6 +13,8 @@ import SwiftUI
 struct Frases: Identifiable, Equatable {
     
     var id = UUID().uuidString
+    
+    
     let eng: String
     let rus: String
     
