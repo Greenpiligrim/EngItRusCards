@@ -15,6 +15,8 @@
 		EAEE940828CBE194005CD230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93FE28CBE194005CD230 /* Assets.xcassets */; };
 		EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940128CBE194005CD230 /* CardFrases.swift */; };
 		EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940228CBE194005CD230 /* HomeView.swift */; };
+		EAFB74E428FD51E900870F3C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAFB74E228FD51E900870F3C /* CoreDataModel.xcdatamodeld */; };
+		EAFB74E628FD536100870F3C /* PersistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB74E528FD536100870F3C /* PersistController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		EAEE93FE28CBE194005CD230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEE940128CBE194005CD230 /* CardFrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFrases.swift; sourceTree = "<group>"; };
 		EAEE940228CBE194005CD230 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EAFB74E328FD51E900870F3C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EAFB74E528FD536100870F3C /* PersistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			children = (
 				EAEE93FC28CBE194005CD230 /* EnglishFrasesDataServise.swift */,
 				EAEE93FD28CBE194005CD230 /* FrasesModel.swift */,
+				EAFB74E528FD536100870F3C /* PersistController.swift */,
+				EAFB74E228FD51E900870F3C /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,11 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFB74E628FD536100870F3C /* PersistController.swift in Sources */,
 				EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
 				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
 				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
+				EAFB74E428FD51E900870F3C /* CoreDataModel.xcdatamodeld in Sources */,
 				EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +397,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAFB74E228FD51E900870F3C /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAFB74E328FD51E900870F3C /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = EAFB74E328FD51E900870F3C /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EAEE93E028CBDF4C005CD230 /* Project object */;
 }

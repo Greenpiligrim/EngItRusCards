@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var newWordfromCore: FetchedResults<Item>
     @EnvironmentObject var vm: FrasesViewModel
     @State var showSheet: Bool = false
     
