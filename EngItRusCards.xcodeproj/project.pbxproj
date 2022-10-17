@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA16CFDE28FD6A0B00DA3FE5 /* Item+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16CFDD28FD6A0B00DA3FE5 /* Item+helper.swift */; };
+		EA16CFE028FD790100DA3FE5 /* EmptyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */; };
+		EA16CFE228FD82F800DA3FE5 /* CreatingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */; };
 		EA5E452F28FD627800AAE37E /* CardFrases2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E452E28FD627800AAE37E /* CardFrases2.swift */; };
 		EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */; };
 		EAEE93F328CBDF4D005CD230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE93F228CBDF4D005CD230 /* Preview Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA16CFDD28FD6A0B00DA3FE5 /* Item+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+helper.swift"; sourceTree = "<group>"; };
+		EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHomeView.swift; sourceTree = "<group>"; };
+		EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCardView.swift; sourceTree = "<group>"; };
 		EA5E452E28FD627800AAE37E /* CardFrases2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrases2.swift; sourceTree = "<group>"; };
 		EAEE93E828CBDF4C005CD230 /* EngItRusCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngItRusCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE93EB28CBDF4C005CD230 /* EngItRusCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngItRusCardsApp.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 				EAEE93FC28CBE194005CD230 /* EnglishFrasesDataServise.swift */,
 				EAEE93FD28CBE194005CD230 /* FrasesModel.swift */,
 				EAFB74E528FD536100870F3C /* PersistController.swift */,
+				EA16CFDD28FD6A0B00DA3FE5 /* Item+helper.swift */,
 				EAFB74E228FD51E900870F3C /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Model;
@@ -108,6 +115,8 @@
 				EAEE940128CBE194005CD230 /* CardFrases.swift */,
 				EA5E452E28FD627800AAE37E /* CardFrases2.swift */,
 				EAEE940228CBE194005CD230 /* HomeView.swift */,
+				EA16CFDF28FD790100DA3FE5 /* EmptyHomeView.swift */,
+				EA16CFE128FD82F800DA3FE5 /* CreatingCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,11 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFB74E628FD536100870F3C /* PersistController.swift in Sources */,
+				EA16CFE028FD790100DA3FE5 /* EmptyHomeView.swift in Sources */,
 				EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */,
+				EA16CFE228FD82F800DA3FE5 /* CreatingCardView.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
 				EAEE940628CBE194005CD230 /* EnglishFrasesDataServise.swift in Sources */,
 				EA5E452F28FD627800AAE37E /* CardFrases2.swift in Sources */,
+				EA16CFDE28FD6A0B00DA3FE5 /* Item+helper.swift in Sources */,
 				EAEE940728CBE194005CD230 /* FrasesModel.swift in Sources */,
 				EAFB74E428FD51E900870F3C /* CoreDataModel.xcdatamodeld in Sources */,
 				EAEE93EC28CBDF4C005CD230 /* EngItRusCardsApp.swift in Sources */,

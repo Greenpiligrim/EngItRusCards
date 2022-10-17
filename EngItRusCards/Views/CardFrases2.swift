@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct CardFrases2: View {
-    let frasses: Frases2
+    let frasses: FetchedResults<Item>
+    @State var indexCoreData: Int = 0
+
     
     @State var offset: CGSize = .zero
     @State var transition: AnyTransition = .slide
@@ -56,10 +58,10 @@ struct CardFrases2: View {
                     
                         .onEnded { _ in
                             if offset.width > 30 {
-                                ifMore()
+                                goForward()
                             } else {
                                 if offset.width < 0 {
-                                    ifLess()
+                                    goBack()
                                 } else {
                                     withAnimation(.spring()) {
                                         offset = .zero
@@ -73,32 +75,52 @@ struct CardFrases2: View {
     }
 }
 
+
+
+
+
+
+
+
+
 extension CardFrases2 {
     
-    func ifMore() {
+    func goForward() {
+        
         transition = .slide
-        withAnimation(.easeOut(duration: 0.1)) {
-           // vm.nextButtonPressed()
-            showTranslate = false
-            existCard.toggle()
-            offset = .zero
+            withAnimation(.easeOut(duration: 0.1)) {
+                // nextButtonPressed()
+                if indexCoreData < frasses.count - 1 {
+                    indexCoreData += 1
+                } else {
+                    indexCoreData = 0
+                }
+                showTranslate = false
+                existCard.toggle()
+                offset = .zero
+            
         }
     }
     
-    func ifLess() {
+    func goBack() {
+        if indexCoreData > 0 {
         transition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
-        withAnimation(.easeIn(duration: 0.1)) {
-           // vm.backButtonPressed()
-            showTranslate = false
-            existCard.toggle()
-            offset = .zero
+            withAnimation(.easeIn(duration: 0.1)) {
+                // backButtonPressed()
+                if indexCoreData > 0 {
+                    indexCoreData -= 1
+                }
+                showTranslate = false
+                existCard.toggle()
+                offset = .zero
+            }
         }
     }
 
 
     private var bigText: some View {
         VStack() {
-            Text(italian ? (wiseWersa ? frasses.rus : frasses.eng) : (wiseWersa ? frasses.rusIt : frasses.it))
+            Text(italian ? (wiseWersa ? frasses[indexCoreData].rus : frasses[indexCoreData].eng) : (wiseWersa ? frasses[indexCoreData].rusIt : frasses[indexCoreData].it))
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
@@ -109,7 +131,7 @@ extension CardFrases2 {
 
     private var littleText: some View {
         HStack {
-            Text(italian ? (showTranslate ? "*" + (wiseWersa ? frasses.eng.uppercased() : frasses.rus.uppercased()) : (wiseWersa ? "* подсказка" : "* tap to show translate" )) : ((showTranslate ? "*" + (wiseWersa ? frasses.it.uppercased() : frasses.rusIt.uppercased()) : (wiseWersa ? "* подсказка" : "* toccare per visualizzare la traduzione" ))))
+            Text(italian ? (showTranslate ? "*" + (wiseWersa ? frasses[indexCoreData].eng.uppercased() : frasses[indexCoreData].rus.uppercased()) : (wiseWersa ? "* подсказка" : "* tap to show translate" )) : ((showTranslate ? "*" + (wiseWersa ? frasses[indexCoreData].it.uppercased() : frasses[indexCoreData].rusIt.uppercased()) : (wiseWersa ? "* подсказка" : "* toccare per visualizzare la traduzione" ))))
                 .font(.subheadline)
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
@@ -121,27 +143,6 @@ extension CardFrases2 {
         .padding()
     }
 
-
-    private var buttOn: some View {
-        Button {
-            withAnimation(.easeOut) {
-                //vm.nextButtonPressed()
-                existCard.toggle()
-                if showTranslate {
-                    showTranslate = false
-                }
-            }
-
-        } label: {
-            Text("Next")
-                .padding()
-        }
-        .buttonStyle(.borderedProminent)
-        .tint(.orange)
-        .shadow(radius: 10)
-       
-    }
-
     private var emptyCard: some View {
         Color.orange
             .frame(width: 300, height: 400)
@@ -151,6 +152,10 @@ extension CardFrases2 {
             .transition(.slide)
     }
 
+    
+    
+    
+    
 struct ArrowFlag: View {
     @Binding var wiseWersa: Bool
     @Binding var italian: Bool
