@@ -17,6 +17,7 @@
 		EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE940228CBE194005CD230 /* HomeView.swift */; };
 		EAFB74E428FD51E900870F3C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAFB74E228FD51E900870F3C /* CoreDataModel.xcdatamodeld */; };
 		EAFB74E628FD536100870F3C /* PersistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB74E528FD536100870F3C /* PersistController.swift */; };
+		EAFB74E828FD594500870F3C /* CardFrases2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB74E728FD594500870F3C /* CardFrases2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EAEE940228CBE194005CD230 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EAFB74E328FD51E900870F3C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		EAFB74E528FD536100870F3C /* PersistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistController.swift; sourceTree = "<group>"; };
+		EAFB74E728FD594500870F3C /* CardFrases2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrases2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EAEE940128CBE194005CD230 /* CardFrases.swift */,
+				EAFB74E728FD594500870F3C /* CardFrases2.swift */,
 				EAEE940228CBE194005CD230 /* HomeView.swift */,
 			);
 			path = Views;
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFB74E628FD536100870F3C /* PersistController.swift in Sources */,
+				EAFB74E828FD594500870F3C /* CardFrases2.swift in Sources */,
 				EAEE940B28CBE194005CD230 /* HomeView.swift in Sources */,
 				EAEE940A28CBE194005CD230 /* CardFrases.swift in Sources */,
 				EAEE940528CBE194005CD230 /* FrasesViewModel.swift in Sources */,
